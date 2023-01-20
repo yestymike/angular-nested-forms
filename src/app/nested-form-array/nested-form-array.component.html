@@ -1,0 +1,15 @@
+<div class="d-flex flex-column p-1 form">
+    <h3>nested-form-array.component</h3>
+    <div class="d-flex g-1">
+        <button (click)="onAdd()">Add</button>
+    </div>
+    <ng-container *ngIf="form">
+        <div *ngFor="let formGroup of formGroups; let index = index" [formGroup]="formGroup" class="d-flex g-1">
+            <input formControlName="firstName" type="text">
+            <input formControlName="middleName" type="text">
+            <input formControlName="lastName" type="text">
+            <button (click)="onRemove(index)">Remove</button>
+        </div>
+    </ng-container>
+    <pre><p>{{form.getRawValue() | json }}</p></pre>
+</div>

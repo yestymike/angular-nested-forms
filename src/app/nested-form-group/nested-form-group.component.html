@@ -1,0 +1,6 @@
+<div *ngIf="form" [formGroup]="form" class="d-flex flex-column form">
+    <h3>{{title}}</h3>
+    <input type="text" formControlName="nested1" title="Nested FormGroup (binding on property)">
+    <input type="text" formControlName="nested2">
+    <pre *ngIf="debug"><p>{{form.getRawValue() | json }}</p></pre>
+</div>

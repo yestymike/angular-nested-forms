@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.g-1 {
+    gap: 1rem;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.form {
+    border: 2px dashed black;
+    border-radius: 4px;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.red {
+    background-color: #ffaeae;
+}
+
+.green {
+    background-color: #dcffa6;
+}
+
+.blue {
+    background-color: #95c1ff;
+}
