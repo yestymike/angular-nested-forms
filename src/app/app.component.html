@@ -1,4 +1,4 @@
-<div class="d-flex flex-column p-1" [formGroup]="form">
+<div class="app-example" [formGroup]="form">
     <div *ngIf="form" class="form d-flex flex-column blue">
         <h3>app.component</h3>
         <input formControlName="text1" type="text">
@@ -15,6 +15,12 @@
                                formGroupName="nestedFormGroup"
                                title="nested-form-group.component (binding on property)">
         </app-nested-form-group>
-        <pre><p>{{form.getRawValue() | json }}</p></pre>
+    </div>
+    <div class="output">
+        <pre>
+            <code>
+                <pre><p>{{form.getRawValue() | json }}</p></pre>
+            </code>
+        </pre>
     </div>
 </div>

@@ -1,0 +1,18 @@
+.app-example {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+    div:first-child {
+        width: 100%;
+    }
+
+    .output {
+        margin-left: auto;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden auto;
+    }
+}
